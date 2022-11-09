@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.error{
+    color: red;
+    font-size: 12px;
+    visibility: none;
+    margin-left: 20px;
+ 
+}
+header > h1{
+    text-align: center;
+    margin: 20px;
+    color: #2980b9;
+}
+
+.inputs{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.input{
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    
+    
+}
+input[type=text]:focus, input[type=number]:focus{
+   outline: none;
+   border: 2px solid  #2980b9;
+   
+}
+
+.btn4{
+    width: 150px;
+}
+
+.addButton{
+    padding: 10px;
+    background-color: #2980b9;
+    border: none;
+    border-radius:5px;
+    color: white;
+    height: 40px;
+}
+.addButton:hover{
+    cursor: pointer;
+    
+}
+
+
+.detailsContainer{
+    width: 875px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    justify-content: space-between;
+    background-color: #2980b9;
+    border-radius:5px;
+    color: white;
+ 
+}
+
+.nameDate{
+    margin-left: 15px;
+    width: 300px;
+}
+
+.toggleContainer{
+    margin-right: 20px;
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+.name{
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+.country{
+    letter-spacing: 2px;
+    width: 200px;
+    font-size: 15px;
+
+}
+.deleteIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.deleteButton{
+    background: none;
+    border: none;
+}
+
+.add5{
+    background: none;
+    border: 1px solid white;
+
+    text-align: center;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    color:  white;
+}
+.minus5{
+    background: none;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    color:  white;
+}
+
+.date{
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .detailsContainer{
+        width: 90%;
+    }
+    .inputs{    
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin:auto;
+        width: 60%;
+        font-size: 1%;
+    }
+    .input1, .input2, .input3, .input4{
+       
+        margin: 10px;
+        
+     
+    }
+
+    input[type=text], input[type=number]{
+        width: 150px;
+    }
+    
+    p.score{
+        margin: 20px;
+    }
+}
